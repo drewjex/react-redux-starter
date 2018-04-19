@@ -3,7 +3,8 @@ import Test from '../components/Test'
 import { resetCounter } from '../actions'
 
 const mapStateToProps = state => ({
-    counter: state.tests
+    counter: state.tests,
+    todos: state.todos //also has access to todo from state
 })
 
 const mapDispatchToProps = dispatch => ({
